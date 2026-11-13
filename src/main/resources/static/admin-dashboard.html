@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Administrator Dashboard</h1>
+    <button id="logoutButton">Log out</button>
+</header>
+
+<main>
+    <section class="card">
+        <h2>Create Parcel</h2>
+
+        <form id="adminCreateForm">
+            <input id="adminTrackingId" required
+                   placeholder="Tracking ID">
+            <input id="adminSender" required
+                   placeholder="Sender">
+            <input id="adminReceiver" required
+                   placeholder="Receiver">
+            <input id="adminCustomerEmail" type="email" required
+                   placeholder="Registered customer's email">
+            <button type="submit">Create Parcel</button>
+        </form>
+
+        <p id="adminCreateMessage" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+        <h2>Manage Parcels</h2>
+
+        <input id="adminSearch"
+               placeholder="Search tracking ID or recipient">
+
+        <select id="adminStatusFilter">
+            <option value="">All statuses</option>
+            <option>Booked</option>
+            <option>In Transit</option>
+            <option>Out for Delivery</option>
+            <option>Delivered</option>
+            <option>Delayed</option>
+            <option>Cancelled</option>
+        </select>
+
+        <div id="adminParcels"></div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Courier System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<main class="auth">
+    <section class="card">
+        <h1>Log in</h1>
+
+        <form id="loginForm">
+            <label for="loginEmail">Email</label>
+            <input id="loginEmail" type="email" required>
+
+            <label for="loginPassword">Password</label>
+            <input id="loginPassword" type="password" required>
+
+            <button type="submit">Log in</button>
+        </form>
+
+        <p id="loginMessage" aria-live="polite"></p>
+        <p>New customer? <a href="/register.html">Create an account</a></p>
+    </section>
+</main>
+</body>
+</html>

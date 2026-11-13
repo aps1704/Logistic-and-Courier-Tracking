@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f6fb;
+    color: #202938;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 22px 5%;
+    background: #163b72;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    color: white;
+}
+
+main {
+    width: min(1000px, 92%);
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.auth {
+    width: min(450px, 92%);
+    margin: 60px auto;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccd3dd;
+    border-radius: 6px;
+    font: inherit;
+}
+
+button {
+    background: #1763bd;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #104b92;
+}
+
+.parcel {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid #dce3ed;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.parcel p {
+    line-height: 1.5;
+}
+
+#trackingResult,
+#registerMessage,
+#loginMessage,
+#adminCreateMessage {
+    margin-top: 16px;
+}
+
+@media (max-width: 600px) {
+    header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 16px;
+    }
+}

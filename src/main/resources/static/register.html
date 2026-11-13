@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Courier System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<main class="auth">
+    <section class="card">
+        <h1>Create your account</h1>
+
+        <form id="registerForm">
+            <label for="registerEmail">Email</label>
+            <input id="registerEmail" type="email" required>
+
+            <label for="registerPassword">Password</label>
+            <input id="registerPassword" type="password"
+                   minlength="8" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="registerMessage" aria-live="polite"></p>
+        <p>Already registered? <a href="/login.html">Log in</a></p>
+    </section>
+</main>
+</body>
+</html>
